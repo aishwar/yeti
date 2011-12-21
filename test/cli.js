@@ -27,7 +27,7 @@ vows.describe("CLI").addBatch({
             assert.equal(config.override, "yes");
         },
         "should treat everything that isn't an option as a file" : function (config) {
-            assert.length(config.files, 2);
+            assert.equal(config.files.length, 2);
             assert.include(config.files, "hallo");
             assert.include(config.files, "reid");
         },

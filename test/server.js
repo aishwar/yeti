@@ -4,7 +4,7 @@ var assert = require("assert");
 var server = require("../lib/server");
 var ui = require("../lib/ui");
 
-var Script = process.binding("evals").Script;
+var Script = process.binding("evals").NodeScript;
 
 var macros = require("../lib/macros"),
     request = macros.request,
